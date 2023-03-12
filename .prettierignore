@@ -1,0 +1,6 @@
+# ignore dependencies' files
+node_modules
+
+# ignore formatting html/css
+*.html
+*.css
