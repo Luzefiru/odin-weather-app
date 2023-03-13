@@ -14,7 +14,6 @@ body, html {
 
 body {
   background-color: rgb(33, 33, 33);
-  background-image: url(../res/backgrounds/cloudy.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

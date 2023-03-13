@@ -94,23 +94,22 @@ function displayWeather(data) {
   /* Set background depending on weather*/
   switch (data.weather[0].main) {
     case 'Clear':
-      document.body.style.backgroundImage = 'url(../res/backgrounds/clear.jpg)';
+      document.body.style.backgroundImage = 'url(./res/backgrounds/clear.jpg)';
       break;
     case 'Clouds':
-      document.body.style.backgroundImage =
-        'url(../res/backgrounds/cloudy.jpg)';
+      document.body.style.backgroundImage = 'url(./res/backgrounds/cloudy.jpg)';
       break;
     case 'Rain':
     case 'Drizzle':
     case 'Mist':
-      document.body.style.backgroundImage = 'url(../res/backgrounds/rain.jpg)';
+      document.body.style.backgroundImage = 'url(./res/backgrounds/rain.jpg)';
       break;
     case 'Thunderstorm':
       document.body.style.backgroundImage =
-        'url(../res/backgrounds/thunder.jpg)';
+        'url(./res/backgrounds/thunder.jpg)';
       break;
     case 'Snow':
-      document.body.style.backgroundImage = 'url(../res/backgrounds/snow.jpg)';
+      document.body.style.backgroundImage = 'url(./res/backgrounds/snow.jpg)';
       break;
     default:
       break;
