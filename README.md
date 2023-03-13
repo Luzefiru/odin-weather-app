@@ -1,6 +1,6 @@
 # odin-weather-app
 
-A weather forecast site that uses OpenWeatherMap's API to practice asynchronous JavaScript &amp; API data fetching.
+A weather forecast app that uses OpenWeatherMap's API to practice asynchronous JavaScript &amp; API data fetching.
 
 This project allowed me to practice using the browser's `fetch()` command to do Cross-Origin Resource Sharing with an external API -- specifically the [OpenWeatherMap API](https://openweathermap.org/api). I used Promises and `async/await` to parse the data asynchronously utilizing the JavaScript Event Loop.
 
