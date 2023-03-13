@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap');
+
 *,
 ::before,
 ::after {
@@ -11,7 +13,133 @@ body, html {
 }
 
 body {
-  background: url(../res/backgrounds/day-cloudy.jpg) no-repeat;
+  background-color: rgb(33, 33, 33);
+  background-image: url(../res/backgrounds/cloudy.jpg);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  font-family: 'Golos', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.weather-desc {
+  font-size: 22px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.weather-desc__img {
+  width: 48px;
+}
+
+.name {
+  font-size: 52px;
+  line-height: 1.1;
+}
+
+.data {
+  display: flex;
+  gap: 54px;
+  justify-content: center;
+}
+
+.data__temp {
+  font-size: 86px;
+  font-weight: 700;
+  position: relative;
+}
+
+.data__temp::before {
+  content: '°C';
+  font-size: 32px;
+  position: absolute;
+  top: 6px;
+  right: -24px;
+}
+
+.data__temp::after {
+  all: unset;
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 80%;
+  right: -40px;
+  top: 12px;
+  background-color: whitesmoke;
+}
+
+.data__misc {
+  font-size: 22px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.data__misc > * {
+  display: flex;
+  gap: 8px;
+}
+
+.data__misc > * > img {
+  width: 30px;
+}
+
+.data__misc__feels-like {
+  position: relative;
+}
+
+.data__misc__feels-like::after {
+  content: '°C';
+  font-size: 12px;
+  position: relative;
+  right: 4px;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 2s;
+}
+
+.search {
+  position: relative;
+  top: 16px;
+  display: flex;
+  gap: 6px;
+}
+
+#search {
+  height: 2rem;
+  width: 12rem;
+  font-size: 16px;
+  padding: 0 0.5rem;
+  border: none;
+  border-radius: 12px;
+}
+
+.search > button {
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  font-family: 'Golos', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.search > button:hover {
+  background-color: rgb(221, 221, 221);
 }
